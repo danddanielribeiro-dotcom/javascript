@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font: bold 20px Arial, sans-serif;
+        }
+
+        div {
+            display: flex;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            background-color: rgb(193, 203, 212);
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            width: 150px;
+            cursor: pointer;
+        }
+
+        div:hover {
+            background-color: rgb(150, 160, 170);
+        }
+    </style>
+    <title>Desafio Boas-vindas</title>
+</head>
+<body>
+    <h1>Boas-vindas</h1>
+    <div>Inicie o Desafio</div>
+    <script>
+        var div = document.querySelector("div");
+        div.addEventListener("click", function() {
+            var nome = prompt('Qual é o seu nome?')
+            var idade = prompt('Olá ' + nome + ' quantos anos voçê tem?' )
+            alert('Acabei de conhecer ' + nome + ' que tem ' + idade +  ' anos de idade!')
+        });
+    </script>
+</body>
+</html>

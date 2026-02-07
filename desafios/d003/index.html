@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        div {
+            display: inline-block;
+            background-color: rgb(236, 236, 238);
+            margin: 15px;
+            width: 250px;
+            height: 70px;
+            line-height: 70px;
+            text-align: center;
+            border-radius: 8px;
+            border: 1px solid #7c7b7b;
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        div:hover {
+            background-color: rgb(200, 200, 202);
+            box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+        }
+    </style>
+    <title>Desafio antes e depois</title>
+</head>
+<body>
+    <h1>Antes e Depois</h1>
+    <div>Antecessor e Sucessor</div>
+    <script>
+        var div = document.querySelector('div')
+        div.addEventListener('click',function (){
+          var num = Number(prompt('Digite um número inteiro qualquer:'))
+          var antecessor = num - 1
+          var sucessor = num + 1
+          alert('o antes de ' + num + ' temos o número ' + antecessor + '\n Depois de ' + num + ' temos o número ' + sucessor)
+        })
+    </script>
+</body>
+</html>

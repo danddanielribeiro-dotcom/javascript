@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+        }
+        div {
+            display: inline-block;
+            font: normal 20px arial,sans-serif;
+            background-color: rgb(221, 222, 224);
+            border: 1px solid black;
+            text-align: center;
+            margin: 10px;
+            height: 50px;
+            width: 100px;
+            line-height: 50px;
+            cursor: pointer;
+
+        }
+
+        #btn1:hover {
+            background-color: rgb(165, 184, 190);
+        }
+
+        #btn2:hover {
+            background-color: rgb(165, 184, 190);
+        }
+
+        #btn3:hover {
+            background-color: rgb(165, 184, 190);
+        }
+
+        
+    </style>
+    <title>Desafio das Mensagens</title>
+</head>
+<body>
+    <h1>Desafio das Mensagens</h1>
+    
+    <div id="btn1">Botão 1</div>
+    <div id="btn2">Botão 2</div>
+    <div id="btn3">Botão 3</div>
+    <script>
+        var btn1 = document.getElementById('btn1');
+        var btn2 = document.getElementById('btn2');
+        var btn3 = document.getElementById('btn3');
+        btn1.addEventListener('click',function(){
+            alert('Você clicou no 1º botão!');
+        });
+        btn2.addEventListener('click',function(){
+            alert('você clicou no 2º botão!');
+        })
+        btn3.addEventListener('click',function(){
+            alert('Você clicou no 3º botão!');
+        })
+    </script>
+</body>
+</html>

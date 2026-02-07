@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatações em JS</title>
+    <style>
+        
+        body {
+            background-color: lightskyblue;
+            font: normal 20pt Arial;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Página de Exercício</h1>
+    <p>Essa é uma páina de exercícios de formatações em javaScript</p>
+    <script>
+        var nome = window.prompt('Qual é o seu nome?');
+        document.writeln(`olá,<strong>${nome}</strong>.seu nome tem ${nome.length} letras`)
+        document.writeln(`<br>Seu nome em Maiúsculas é <em>${nome.toUpperCase()}</em>`);
+        document.writeln(`<br>Seu nome em Minúsculas é <em>${nome.toLowerCase()}</em>`);
+    </script>
+</body>
+</html>
