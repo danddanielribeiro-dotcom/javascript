@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+        }
+        
+        div {
+            display: inline-block;
+            height: 70px;
+            width: 250px;
+            background-color: rgb(238, 235, 235);
+            line-height: 70px;
+            text-align: center;
+            border-radius: 8px;
+            border: 1px solid rgba(0, 0, 0, 0.466);
+        }
+
+        div:hover {
+            background-color: rgba(134, 134, 134, 0.904);
+            cursor: pointer;
+        }
+    </style>
+    <title>Calcula troco</title>
+</head>
+<body>
+    <h1>Calculando o Troco</h1>
+    <div>Comprar produto</div>
+<script>
+    let div = document.querySelector('div')
+    div.addEventListener('click',function(){
+        let prod = new Text(window.prompt('Que produto você está comprando?'))
+        let custo = Number(window.prompt(`Quanto custa ${prod} que você está comprando?`))
+        let valor = Number(window.prompt(`Qual foi o valor que você deu pra pagar ${prod}?`))
+        window.alert(`você comprou ${prod} que custou ${custo}.
+        Deu ${valor} em dinheiro e vai receber ${valor - custo} de troco.
+        volte Sempre!`)
+    }
+)
+</script>
+</body>
+
+</html>
